@@ -31,7 +31,7 @@ const removeAlert = function (e) {
   if (e) {
     setTimeout(() => {
       e.classList.add("hidden");
-    }, 3000);
+    }, 2000);
   }
 };
 
