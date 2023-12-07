@@ -53,13 +53,16 @@ let formLabelBefore = document.querySelector(".form-check-label-before");
 taxBtn.addEventListener("click", () => {
   cardPriceBeforeTax.forEach((e) => {
     e.classList.toggle("hidden");
-    cardPriceAfterTax.forEach((e) => {
-      e.classList.toggle("hidden");
-    });
   });
+
+  cardPriceAfterTax.forEach((e) => {
+    e.classList.toggle("hidden");
+  });
+
   formLabelBefore.classList.toggle("hidden");
   formLabelAfter.classList.toggle("hidden");
 });
+
 
 // // Disable right-click(inspect-option)
 
