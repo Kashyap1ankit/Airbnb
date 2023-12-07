@@ -81,6 +81,7 @@ main()
 async function main() {
   await mongoose.connect(DB_URL);
 }
+
 //View Folder - ejs
 
 app.set("view engine", "ejs");
