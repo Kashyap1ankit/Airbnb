@@ -1,0 +1,104 @@
+
+<!-- Added the boilerplate  -->
+
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<!-- Adding the filter UI  -->
+
+<div class="filters mt-3 mb-0">
+  <div class="filter">
+<a href="/listings" data-category="all">
+  <div><i class="fa-solid fa-hotel"></i></div>
+  <p name="category">All</p>
+</a>
+  </div>
+
+  <div class="filter">
+    <a href="/listings/sort/Beachfront">
+      <div><i class="fa-solid fa-umbrella-beach"></i></div>
+    <p>Beachfront</p>
+    </a>
+  </div>
+
+  <div class="filter">
+    <a href="/listings/sort/Trending">
+      <div><i class="fa-solid fa-house-fire"></i></i></div>
+    <p>Trending</p>
+    </a>
+  </div>
+
+  <div class="filter">
+   <a href="/listings/sort/Forest">
+    <div><i class="fa-solid fa-tree"></i></div>
+    <p>Forest</p>
+   </a>
+  </div>
+
+  <div class="filter">
+    <a href="/listings/sort/Igloo">
+      <div><i class="fa-solid fa-igloo"></i></div>
+    <p>Igloo</p>
+    </a>
+  </div>
+
+  <div class="filter">
+    <a href="/listings/sort/Downtown">
+      <div><i class="fa-solid fa-city"></i></div>
+    <p>Downtown</p>
+    </a>
+  </div>
+
+  <div class="filter">
+   <a href="/listings/sort/Pool">
+    <div><i class="fa-solid fa-person-swimming"></i></div>
+    <p>Pool</p>
+   </a>
+  </div>
+
+  <div class="filter">
+  <a href="/listings/sort/Cruise">
+    <div><i class="fa-solid fa-ship"></i></div>
+    <p>Cruise Ship</p>
+  </a>
+  </div>
+
+  <div class="filter">
+    <a href="/listings/sort/Mountain">
+      <div><i class="fa-solid fa-mountain-city"></i></div>
+    <p>Mountain Area</p>
+    </a>
+  </div>
+
+  <div class="filter-tax">
+    <div class="form-check form-switch form-check-reverse">
+      <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+      <label class="form-check-label form-check-label-before" for="flexSwitchCheckReverse">Display total before taxes</label>
+      <label class="form-check-label form-check-label-after hidden" for="flexSwitchCheckReverse">Display total after taxes</label>
+    </div>
+  
+  </div>
+ 
+</div>
+
+
+<!-- Adding the code for this page  -->
+
+<div class="row all-listing row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mt-5 ms-auto">
+
+    <% data.forEach((e) => { %>
+      <a href="/listings/<%=e.id%>" class="listing-link">
+      <div class="card col mt-2">
+        <img src="<%=e.image.url%>" class="card-img-top" alt="listing-image">
+        <div class="card-img-overlay"><img src="/images/like-trans.png" alt="">
+        </div>
+        <div class="card-body">
+          <p class="card-text title"><%=e.title%></p>
+          <p class="card-text card-text-pricing">&#8377;<%=e.price%>/night</p>
+          <p class="card-text card-text-pricing-tax hidden">&#8377;<%-e.price+e.price*0.18%>/night</p>
+        </div>
+      </div>
+    </a>
+      <% }) %>
+</div>
+
+</html>

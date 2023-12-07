@@ -1,0 +1,103 @@
+<!-- Added the boilerplate  -->
+
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<!-- Adding the code for this page  -->
+
+<div class="row new-form mt-3">
+  <div class="add-head mb-2">Add New Residency</div>
+  <form
+    action="/listings"
+    method="post"
+    class="needs-validation"
+    enctype="multipart/form-data"
+    novalidate
+  >
+    <div class="mt-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" name="listing[title]" class="form-control" required />
+
+      <div class="invalid-feedback">Choose a title.</div>
+    </div>
+
+    <div class="mt-3">
+      <label for="description" class="form-label"> Description</label>
+      <textarea
+        name="listing[description]"
+        id=""
+        cols="30"
+        rows="5"
+        class="form-control"
+        required
+      ></textarea>
+
+      <div class="invalid-feedback">Can't Be Emptied</div>
+    </div>
+
+    <div class="mt-3">
+      <label for="image" class="form-label">Upload Image</label>
+      <input type="file" name="listing[image]" class="form-control" required />
+      <div class="invalid-feedback">Can't Be Emptied</div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-6">
+        <label for="price" class="form-label">Price</label>
+        <input
+          type="number"
+          name="listing[price]"
+          placeholder="₹1200/night"
+          class="form-control"
+          required
+        />
+
+        <div class="invalid-feedback">Enter valid price!</div>
+      </div>
+
+      <div class="col-6">
+        <label for="location" class="form-label">Location</label>
+        <input
+          type="text"
+          name="listing[location]"
+          class="form-control"
+          required
+        />
+
+        <div class="invalid-feedback">Can't Be Emptied.</div>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <label for="country" class="form-label">Country</label>
+      <input
+        type="text"
+        name="listing[country]"
+        class="form-control"
+        required
+      />
+
+      <div class="invalid-feedback">Can't Be Emptied.</div>
+    </div>
+
+    <div class="mt-3">
+      <label for="category" class="form-label">Select Category</label>
+      <select
+        class="form-select form-control"
+        aria-label="Default select example"
+        name="listing[field]"
+        required
+      >
+        <option value="Beachfront">Beachfront</option>
+        <option value="Trending">Trending</option>
+        <option value="Forest">Forest</option>
+        <option value="Igloo">igloo</option>
+        <option value="Downtown">Downtown</option>
+        <option value="Pool">Pool</option>
+        <option value="Cruise">Cruiseship</option>
+        <option value="Mountain">Mountain</option>
+      </select>
+    </div>
+
+    <button class="btn btn-success mt-4 mb-4">Submit</button>
+  </form>
+</div>

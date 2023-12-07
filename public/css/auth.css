@@ -1,0 +1,554 @@
+.signup-modal {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  position: fixed;
+  top: 15%;
+  left: 40%;
+  width: 25%;
+  z-index: 600;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+
+.signup-modal .cross {
+  position: absolute;
+  padding: 0%;
+  left: 92%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.signup-modal h1 {
+  font-family: "Kanit", sans-serif;
+  padding: 12% 6% 12% 12%;
+  font-size: 22px;
+}
+
+.signup-modal h1 span {
+  color: rgb(222, 72, 58);
+  font-size: 22px;
+}
+
+.signup-modal .mid-section {
+  display: block;
+}
+
+.signup-modal .mid-section label {
+  font-size: 17px;
+  display: block;
+  margin-left: 8%;
+  margin-bottom: 1%;
+  font-family: "Inconsolata", monospace;
+}
+
+.signup-modal .mid-section input {
+  display: block;
+  margin-left: 8%;
+  margin-bottom: 5%;
+  padding: 3% 2% 3% 2%;
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: #a5c5e53a;
+  border-radius: 5px;
+}
+
+.signup-modal .mid-section .signup-btn {
+  margin-left: 8%;
+  width: 85%;
+  padding: 2% 0;
+  border: none;
+  background-color: #6674cc;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.signup-modal .signup-footer-section {
+  margin: 10% 2%;
+  display: flex;
+  justify-content: space-around;
+  color: #6674cc;
+  cursor: pointer;
+}
+
+/* Login Modal section  */
+
+.login-modal {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  position: fixed;
+  top: 25%;
+  left: 40%;
+  width: 25%;
+  z-index: 600;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+
+.login-modal .cross {
+  position: absolute;
+  padding: 0%;
+  left: 92%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.login-modal h1 {
+  font-family: "Kanit", sans-serif;
+  padding: 12% 6% 12% 12%;
+  font-size: 22px;
+}
+
+.login-modal .wrong-details {
+  margin-left: 10%;
+  margin-bottom: 10%;
+  background-color: rgba(255, 0, 0, 0.338);
+  width: 75%;
+  border-radius: 2px;
+}
+
+.login-modal .wrong-details p {
+  font-size: 17px;
+  padding: 2% 1% 2% 2%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.login-modal .mid-section {
+  display: block;
+}
+
+.login-modal .mid-section label {
+  font-size: 17px;
+  display: block;
+  margin-left: 8%;
+  margin-bottom: 1%;
+  font-family: "Inconsolata", monospace;
+}
+
+.login-modal .mid-section input {
+  display: block;
+  margin-left: 8%;
+  margin-bottom: 5%;
+  padding: 3% 2% 3% 2%;
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: #a5c5e53a;
+  border-radius: 5px;
+}
+
+.login-modal .mid-section .login-btn {
+  margin-left: 8%;
+  width: 85%;
+  padding: 2% 0;
+  border: none;
+  background-color: #6674cc;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.login-modal .login-footer-section {
+  margin: 10% 2%;
+  display: flex;
+  justify-content: space-around;
+  color: #6674cc;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .signup-modal {
+    position: fixed;
+    top: 8%;
+    left: 4%;
+    width: 40%;
+  }
+
+  .signup-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .signup-modal h1 {
+    font-size: 15px;
+  }
+
+  .signup-modal h1 span {
+    font-size: 15px;
+  }
+  .signup-modal .mid-section label {
+    font-size: 17px;
+  }
+
+  .signup-modal .mid-section .signup-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .signup-modal .signup-footer-section {
+    margin: 5% 2%;
+  }
+
+  .signup-modal .signup-footer-section p {
+    font-size: 12px;
+  }
+
+  /* Login Modal section  */
+
+  .login-modal {
+    position: fixed;
+    top: 15%;
+    left: 4%;
+    width: 40%;
+  }
+
+  .login-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .login-modal h1 {
+    font-size: 15px;
+  }
+
+  .login-modal .mid-section .login-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .login-modal .login-footer-section {
+    margin: 5% 2%;
+  }
+
+  .login-modal .login-footer-section p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .signup-modal {
+    position: fixed;
+    top: 8%;
+    left: 8%;
+    width: 40%;
+  }
+
+  .signup-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .signup-modal h1 {
+    font-size: 15px;
+  }
+
+  .signup-modal h1 span {
+    font-size: 15px;
+  }
+  .signup-modal .mid-section label {
+    font-size: 17px;
+  }
+
+  .signup-modal .mid-section .signup-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .signup-modal .signup-footer-section {
+    margin: 5% 2%;
+  }
+
+  .signup-modal .signup-footer-section p {
+    font-size: 12px;
+  }
+
+  /* Login Modal section  */
+
+  .login-modal {
+    position: fixed;
+    top: 15%;
+    left: 8%;
+    width: 40%;
+  }
+
+  .login-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .login-modal h1 {
+    font-size: 15px;
+  }
+
+  .login-modal .mid-section .login-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .login-modal .login-footer-section {
+    margin: 5% 2%;
+  }
+
+  .login-modal .login-footer-section p {
+    font-size: 12px;
+  }
+}
+
+/* For tabs screens  */
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .signup-modal {
+    position: fixed;
+    top: 8%;
+    left: 10%;
+    width: 40%;
+  }
+
+  .signup-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .signup-modal h1 {
+    font-size: 20px;
+  }
+
+  .signup-modal h1 span {
+    font-size: 20px;
+  }
+  .signup-modal .mid-section label {
+    font-size: 17px;
+  }
+
+  .signup-modal .mid-section .signup-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .signup-modal .signup-footer-section {
+    margin: 5% 2%;
+  }
+
+  .signup-modal .signup-footer-section p {
+    font-size: 17px;
+  }
+
+  /* Login Modal section  */
+
+  .login-modal {
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    width: 40%;
+  }
+
+  .login-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .login-modal h1 {
+    font-size: 20px;
+  }
+
+  .login-modal .mid-section .login-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .login-modal .login-footer-section {
+    margin: 5% 2%;
+  }
+
+  .login-modal .login-footer-section p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .signup-modal {
+    position: fixed;
+    top: 8%;
+    left: 15%;
+    width: 40%;
+  }
+
+  .signup-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .signup-modal h1 {
+    font-size: 22px;
+  }
+
+  .signup-modal h1 span {
+    font-size: 22px;
+  }
+  .signup-modal .mid-section label {
+    font-size: 17px;
+  }
+
+  .signup-modal .mid-section .signup-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .signup-modal .signup-footer-section {
+    margin: 5% 2%;
+  }
+
+  .signup-modal .signup-footer-section p {
+    font-size: 17px;
+  }
+
+  /* Login Modal section  */
+
+  .login-modal {
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    width: 40%;
+  }
+
+  .login-modal .cross {
+    position: absolute;
+    top: 3%;
+    left: 85%;
+  }
+
+  .login-modal h1 {
+    font-size: 22px;
+  }
+
+  .login-modal .mid-section .login-btn {
+    margin-left: 8%;
+    width: 80%;
+    padding: 2% 0;
+  }
+
+  .login-modal .login-footer-section {
+    margin: 5% 2%;
+  }
+
+  .login-modal .login-footer-section p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .signup-modal {
+    top: 10%;
+    left: 30%;
+    width: 40%;
+  }
+
+  .signup-modal .cross {
+    margin-top: 5%;
+  }
+
+  .signup-modal h1 {
+    font-size: 22px;
+  }
+
+  .signup-modal h1 span {
+    color: rgb(222, 72, 58);
+    font-size: 22px;
+  }
+
+  .signup-modal .mid-section .signup-btn {
+    width: 80%;
+  }
+
+  .signup-modal .signup-footer-section {
+    margin: 8% 2% 2%;
+  }
+
+  /* Login Modal section  */
+
+  .login-modal {
+    top: 10%;
+    left: 30%;
+    width: 40%;
+  }
+
+  .login-modal .cross {
+    margin-top: 5%;
+  }
+
+  .login-modal .mid-section .login-btn {
+    width: 80%;
+  }
+
+  .login-modal .login-footer-section {
+    margin: 8% 2% 2%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .signup-modal {
+    top: 10%;
+    left: 30%;
+    width: 40%;
+  }
+
+  .signup-modal .cross {
+    margin-top: 5%;
+  }
+
+  .signup-modal h1 {
+    font-size: 22px;
+  }
+
+  .signup-modal h1 span {
+    color: rgb(222, 72, 58);
+    font-size: 22px;
+  }
+
+  .signup-modal .mid-section .signup-btn {
+    width: 80%;
+  }
+
+  .signup-modal .signup-footer-section {
+    margin: 8% 2% 2%;
+  }
+
+  /* Login Modal section  */
+
+  .login-modal {
+    top: 10%;
+    left: 30%;
+    width: 40%;
+  }
+
+  .login-modal .cross {
+    margin-top: 5%;
+  }
+
+  .login-modal .mid-section .login-btn {
+    width: 80%;
+  }
+
+  .login-modal .login-footer-section {
+    margin: 8% 2% 2%;
+  }
+}

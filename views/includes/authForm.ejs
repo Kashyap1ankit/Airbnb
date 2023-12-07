@@ -1,0 +1,82 @@
+<!-- Signup-modal  -->
+
+<div class="signup-modal modals hidden">
+  <div class="cross">&times;</div>
+
+  <h1>SIGN UP TO <span class="doit"> Airbnb </span> !</h1>
+
+  <div class="mid-section">
+    <form action="/signup" method="post" class="needs-validation" novalidate>
+      <label for="username" class="form-label">Enter Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        class="form-control"
+        required
+      />
+
+      <label for="email" class="form-label"> What’s Your email address? </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        required
+      />
+
+      <label for="password" class="form-label"> Choose a password</label>
+
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="form-control"
+        required
+      />
+
+      <button class="signup-btn">Signup Now</button>
+    </form>
+  </div>
+
+  <div class="signup-footer-section">
+    <p class="sign-in">Sign in with account</p>
+    <p class="forget-password">Forget your password</p>
+  </div>
+</div>
+
+<!-- Login moadal  -->
+
+<div class="login-modal modals hidden">
+  <div class="cross">&times;</div>
+
+  <h1>LOGIN/ SIGN-UP TO START</h1>
+  <div class="mid-section">
+    <form action="/login" method="post" class="needs-validation" novalidate>
+      <label for="username" class="form-label">Enter Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        class="form-control"
+        required
+      />
+
+      <label for="password" class="form-label"> Choose a password</label>
+
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="form-control"
+        required
+      />
+      <button class="login-btn">Get Login</button>
+    </form>
+  </div>
+
+  <div class="login-footer-section">
+    <p class="create-account">Create account</p>
+    <p class="forget-password">Forget your password</p>
+  </div>
+</div>
