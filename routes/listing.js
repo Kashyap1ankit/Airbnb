@@ -42,9 +42,8 @@ router.get("/sort/:category", listingController.sortListing);
 
 //Seach Functionality
 
-router.get("/listings/search/:name", async (req, res) => {
+router.get("/search/:name", async (req, res) => {
   let { name } = req.params;
-  console.log(name);
   const listing = await Listing.find({ title: name });
   res.render("listings/index.ejs", { data: listing });
 });
