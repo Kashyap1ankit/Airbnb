@@ -73,3 +73,9 @@ module.exports.sortListing = async (req, res) => {
   const allListings = await Listing.find({ field: `${category}` });
   res.render("listings/index.ejs", { data: allListings });
 };
+
+module.exports.searchByName = async (req, res) => {
+  let { name } = req.params;
+  const listing = await Listing.find({ title: name });
+  res.render("listings/index.ejs", { data: listing });
+};

@@ -42,11 +42,7 @@ router.get("/sort/:category", listingController.sortListing);
 
 //Seach Functionality
 
-router.get("/search/:name", async (req, res) => {
-  let { name } = req.params;
-  const listing = await Listing.find({ title: name });
-  res.render("listings/index.ejs", { data: listing });
-});
+router.get("/search/:name", listingController.searchByName);
 
 //Create Route -- Add
 
