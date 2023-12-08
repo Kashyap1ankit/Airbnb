@@ -53,12 +53,25 @@ let formLabelBefore = document.querySelector(".form-check-label-before");
 taxBtn.addEventListener("click", () => {
   cardPriceBeforeTax.forEach((e) => {
     e.classList.toggle("hidden");
-    cardPriceAfterTax.forEach((e) => {
-      e.classList.toggle("hidden");
-    });
   });
+
+  cardPriceAfterTax.forEach((e) => {
+    e.classList.toggle("hidden");
+  });
+
   formLabelBefore.classList.toggle("hidden");
   formLabelAfter.classList.toggle("hidden");
+});
+
+//Search functionality
+
+const searchInp = document.querySelector(".search-inp");
+const searchBtn = document.querySelector(".search-btn");
+
+searchBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  const searchedText = searchInp.value;
+  window.location.href = `/listings/search/${searchedText}`;
 });
 
 // // Disable right-click(inspect-option)

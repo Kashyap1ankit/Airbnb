@@ -77,10 +77,6 @@ body {
   border: none; */
 }
 
-.dark-btn {
-  margin-left: 5%;
-}
-
 /* Filters section  */
 
 .filters {
@@ -457,7 +453,7 @@ body {
 
   .card {
     text-align: left;
-    margin-left: 0%;
+    margin-left: -1%;
     width: 100%;
   }
 
@@ -706,6 +702,8 @@ body {
     flex-wrap: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+    /* margin-left: 1rem; */
+    margin-right: 1rem;
   }
 
   .filters::-webkit-scrollbar {
@@ -726,7 +724,7 @@ body {
   .filter-tax {
     position: absolute;
     top: 24%;
-    right: 25%;
+    right: 19%;
   }
   /* Index Route Styling  */
 
