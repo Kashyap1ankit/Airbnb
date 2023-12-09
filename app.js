@@ -79,7 +79,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect(DB_URL);
+  await mongoose.connect("mongodb://127.0.0.1:27017/Airbnb");
 }
 
 //View Folder - ejs
