@@ -18,7 +18,7 @@ const DB_URL = process.env.ATLAS_URL;
 const SECRET = process.env.SECRET;
 const port = 8080;
 
-// Monog session store
+// Monog session store -- While production
 
 const store = MongoStore.create({
   mongoUrl: DB_URL,
@@ -35,7 +35,7 @@ store.on("error", () => {
 //Session options
 
 const sessionOptions = {
-  store,
+  // store,
   secret: SECRET,
   resave: false,
   saveUninitialized: true,
