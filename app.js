@@ -18,19 +18,19 @@ const DB_URL = process.env.ATLAS_URL;
 const SECRET = process.env.SECRET;
 const port = 8080;
 
-// Monog session store -- While production
+// // Monog session store -- While production
 
-const store = MongoStore.create({
-  mongoUrl: DB_URL,
-  crypto: {
-    secret: SECRET,
-  },
-  touchAfter: 24 * 3600, // time period in seconds
-});
+// const store = MongoStore.create({
+//   mongoUrl: DB_URL,
+//   crypto: {
+//     secret: SECRET,
+//   },
+//   touchAfter: 24 * 3600, // time period in seconds
+// });
 
-store.on("error", () => {
-  console.log("error in database", err);
-});
+// store.on("error", () => {
+//   console.log("error in database", err);
+// });
 
 //Session options
 
